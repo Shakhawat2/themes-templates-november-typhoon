@@ -35,16 +35,24 @@ const BestSeller = () => {
     ]
     return (
         <div className="">
-            <div className="bg-gray-100 flex flex-col justify-center items-center pt-9 sm:pt-12 lg:pt-16 pb-24 sm:pb-52">
+            <div className="relative bg-gray-100 flex   justify-center items-center pt-9 sm:pt-12 lg:pt-16 pb-24 sm:pb-52">
                 <div className="2xl:container 2xl:mx-auto flex flex-col justify-center items-center sm:pb-12 lg:pb-0 space-y-4 px-4 md:px-6 2xl:px-0">
                     <div className="">
-                        <p className="text-3xl lg:text-4xl font-semibold leading-9 text-center text-gray-800">Best Seller Theme</p>
+                        <p className="text-lg lg:text-xl font-bold leading-9 text-center text-black">Best Seller Theme</p>
                     </div>
                     <div>
                         <p className="text-base leading-normal sm:leading-none text-center text-gray-600">Explore Theme that are bought most frequently by people</p>
                     </div>
                 </div>
+                <h1 className="hidden md:flex items-center absolute right-6 text-end font-bold text-blue-500 cursor-pointer">
+                    <span>View More</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 mt-1 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+
+                </h1>
             </div>
+
             <div className="-mt-16 sm:-mt-48 lg:-mt-32 xl:-mt-40 2xl:container 2xl:mx-auto flex justify-center items-center space-y-4 px-4 md:px-6 2xl:px-0 mb-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-between gap-x-8 gap-y-7">
                     {
@@ -54,7 +62,7 @@ const BestSeller = () => {
                                     <img src={item.img} className="rounded-t-lg h-80 " alt="Louvre" />
                                     <div className="flex justify-end absolute top-0 right-0 bottom-0 cursor-pointer left-0 w-full h-full text-white overflow-hidden bg-fixed opacity-0 hover:opacity-50 transition duration-300 ease-in-out" style={{ backgroundColor: 'black' }}>
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="mt-5 mr-5 w-10 h-10 z-50 text-white hover:text-red-500">
-                                            <path  stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
                                         </svg>
                                     </div>
                                 </div>
@@ -71,7 +79,7 @@ const BestSeller = () => {
                                             />
                                         </svg>
                                         <div className="">
-                                            <p className=" text-xl leading-5 font-semibold text-gray-800 mt-5">Magetique - Furniture Magent</p>
+                                            <p className=" text-lg leading-5 font-semibold text-gray-800 mt-5">Magetique - Furniture Magent</p>
                                             <p className=" text-base leading-6 font-normal text-gray-600 opacity-60 mt-3">by RockThemes</p>
                                         </div>
                                     </div>

@@ -3,6 +3,7 @@ import { Inter } from '@next/font/google'
 import Review from '@/Components/Review/Review'
 import BestSeller from '@/Components/BestSellers/BestSellers'
 import Trending from '@/Components/Trending/Trending'
+import RecentlyAdded from '@/Components/RecentlyAdded/RecentlyAdded'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,8 +20,8 @@ export default function Home() {
       <main className="">
         <BestSeller></BestSeller>
         <Trending></Trending>
+        <RecentlyAdded></RecentlyAdded>
         <Review></Review>
-        
       </main>
     </>
   )

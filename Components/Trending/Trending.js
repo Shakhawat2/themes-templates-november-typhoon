@@ -35,15 +35,22 @@ const Trending = () => {
     ]
     return (
         <div className="">
-            <div className="bg-gray-100 flex flex-col justify-center items-center pt-9 sm:pt-12 lg:pt-16 pb-24 sm:pb-52">
+            <div className="relative bg-gray-100 flex flex-col justify-center items-center pt-9 sm:pt-12 lg:pt-16 pb-24 sm:pb-52">
                 <div className="2xl:container 2xl:mx-auto flex flex-col justify-center items-center sm:pb-12 lg:pb-0 space-y-4 px-4 md:px-6 2xl:px-0">
                     <div className="">
-                        <p className="text-3xl lg:text-4xl font-semibold leading-9 text-center text-gray-800">Trending</p>
+                        <p className="text-lg lg:text-xl font-bold leading-9 text-center text-black">Trending</p>
                     </div>
                     <div>
                         <p className="text-base leading-normal sm:leading-none text-center text-gray-600">Check the hottest website designs of the week. These rising stars are worth your attention.</p>
                     </div>
                 </div>
+                <h1 className="hidden md:flex items-center absolute right-6 text-end font-bold text-blue-500 cursor-pointer">
+                    <span>View More</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5 mt-1 ml-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+
+                </h1>
             </div>
             <div className="-mt-16 sm:-mt-48 lg:-mt-32 xl:-mt-40 2xl:container 2xl:mx-auto flex justify-center items-center space-y-4 px-4 md:px-6 2xl:px-0 mb-16">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-items-between gap-x-7 gap-y-7">
@@ -73,7 +80,7 @@ const Trending = () => {
                                             />
                                         </svg>
                                         <div className="">
-                                            <p className=" text-xl leading-5 font-semibold text-gray-800 mt-5">Magetique - Furniture Magent</p>
+                                            <p className=" text-lg leading-5 font-semibold text-gray-800 mt-5">Magetique - Furniture Magent</p>
                                             <p className=" text-base leading-6 font-normal text-gray-600 opacity-60 mt-3">by RockThemes</p>
                                         </div>
                                     </div>
